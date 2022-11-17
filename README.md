@@ -1,7 +1,7 @@
-- NOM : 
-- PRÉNOM :
+- NOM : HOUTMANN
+- PRÉNOM : Florian
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :  https://www.figma.com/file/EDCYL3QGJQwIUhoiCo3sAk/Maquettes-projet-individuel-%E2%80%94-Florian-HOUTMANN?t=1BVK3XLEPGVc9sub-1
 
 # Structure de départ pour le projet individuel.
 
