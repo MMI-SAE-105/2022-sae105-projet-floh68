@@ -1,0 +1,24 @@
+header {
+  height: 5vh;
+  width: 100vw;
+  background-color: var(--pink);
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.navbar .logo{
+  margin-top: -14px;
+}
+
+.navbar .nav-liens ul{
+  display: flex;
+}
