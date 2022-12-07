@@ -1,69 +1,31 @@
-<!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<html>
+  <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test menu</title>
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <style>
-      .menu {
-        position:fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #fff;
-        display: grid;
-        place-content: center;
-      }
-      .header__menuBtn {
-        position: relative;
-        z-index: 10;
-      }
-      .noscroll,
-      .noscroll body {
-      overflow: hidden;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Autorama</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" type="image/svg" href="/public/img/icons/logo_transparent.svg"/>
   </head>
   <body>
-    <!-- https://emmet.io/ -->
-    <!-- header>h1{Test de menu} -->
+    
     <header>
-      <button aria-controls = "mainNav" 
-      @click="menuIsOpen = ! menuIsOpen"
-      class="header_menuBtn">menu</button>
-      <h1>Test de menu</h1>
-      <nav id="mainNav" 
-      x-show = "menuIsOpen" x-transition.duration.800ms
-      class="menu">
-        <ul>
-          <li><a href="#">item 1</a></li>
-          <li><a href="#">item 2</a></li>
-          <li><a href="#">item 3</a></li>
-        </ul>
+      <nav class="navbar">
+        <div id="nav-liens"></div>
+          <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="aPropos.html">A PROPOS</a></li>
+            <li><a href="autresProjets.html">AUTRES PROJETS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="glossaire.html">GLOSSAIRE</a></li>
+          </ul>
+        </div>
+        <a><img src="/public/img/icons/logo_transparent.svg" class="logo"></a>
       </nav>
     </header>
-    <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-      consectetur nobis enim.
-    </p>
+
+
+
   </body>
 </html>
-<dl>
-  <dt>Lorem.</dt>
-  <dd>Lorem ipsum dolor sit amet.</dd>
-</dl>
-<dl>
-  <dt>Maxime.</dt>
-  <dd>Aperiam, veritatis accusantium. Rem, vel!</dd>
-</dl>
-<dl>
-  <dt>Minus.</dt>
-  <dd>Dolorum incidunt quam voluptatum molestiae?</dd>
-</dl>
