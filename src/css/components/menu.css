@@ -8,7 +8,7 @@
     cursor: pointer;
     border: none;
     display: flex;
-    background: #fafafa;
+    background: none;
     align-items: center;
     position: relative;
   }
