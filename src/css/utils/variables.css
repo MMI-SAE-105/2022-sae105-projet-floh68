@@ -3,7 +3,8 @@
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
   --pink: rgba(66, 3, 56, 1);
-  --gray-600: rgba(216, 216, 240, 1);
+  --blue: rgba(216, 216, 240, 1);
+
 
   /* Text-size styles */
   --mobile-4xl: 42px;
