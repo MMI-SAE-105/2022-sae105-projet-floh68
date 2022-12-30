@@ -1,4 +1,6 @@
 footer{
     background-color: var(--pink);
     position: absolute;
+.mailto{
+    color: var(--white);
 }
