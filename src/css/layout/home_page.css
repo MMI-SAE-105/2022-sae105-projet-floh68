@@ -21,7 +21,8 @@ article{
     text-decoration: none;
     height: 190px;
     width: 300px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
 article a{
@@ -29,10 +30,6 @@ article a{
     color: var(--black);
 }
 
-article img{
-    display: block;
-    margin: auto;
-}
 
 #droite{
     margin-left: 70px;
