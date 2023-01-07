@@ -20,6 +20,12 @@ article a{
     color: var(--black);
   }
 
+article img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 #droite{
     margin-left: 108px;
 }
