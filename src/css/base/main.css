@@ -8,4 +8,19 @@ body{
   background-color: var(--blue);
 }
 
+@media (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+  /* Style pour l'iPhone X en mode portrait */
+}
+
+@media (device-width: 812px) and (device-height: 375px) and (orientation: landscape) {
+  /* Style pour l'iPhone X en mode paysage */
+}
+
+@media (device-width: 720px) and (device-height: 1600px) and (orientation: portrait) {
+  /* Style pour le Xiaomi Redmi Note 11 en mode portrait */
+}
+
+@media (device-width: 1600px) and (device-height: 720px) and (orientation: landscape) {
+  /* Style pour le Xiaomi Redmi Note 11 en mode paysage */
+}
 
