@@ -19,6 +19,7 @@ article{
     background-color: transparent;
     text-align: center;
     text-decoration: none;
+    height: 190px;
     width: 300px;
     display: flex;
     justify-content: center;
