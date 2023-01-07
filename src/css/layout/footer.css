@@ -1,8 +1,8 @@
 footer{
     background-color: var(--pink);
-    position: absolute;
     color: var(--white);
     text-align: center;
+    margin-top: auto;
 }
 .mailto{
     font-size: 9px;
@@ -13,6 +13,7 @@ footer{
     display: flex;
 }
 
-img [logo-MMI]{
-    display: flex;
-}
+a.mailto, a.projet, a[href="http://mmimontbeliard.com"], a.nom {
+    display: block;
+  }
+

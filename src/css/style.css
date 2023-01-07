@@ -27,8 +27,9 @@ Soyez attentifs à l'ordre d'import :
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/home_page.css";
 
 /* Composants */
 @import "components/menu.css";
-
+@import "layout/carousel.css";
 @import "vendors/normalize.css"
