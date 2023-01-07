@@ -6,6 +6,7 @@ article img {
 }
 
 article{
+    box-sizing: border-box;
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0 0 10px #000000,
@@ -30,7 +31,6 @@ article a{
 article img{
     display: block;
     margin: auto;
-    width: 80px;
 }
 
 #droite{
