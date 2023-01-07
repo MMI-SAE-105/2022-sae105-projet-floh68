@@ -1,5 +1,6 @@
 ul{
     color:white;
+    overflow: hidden;
 }
 nav{
     background: var(--pink);
