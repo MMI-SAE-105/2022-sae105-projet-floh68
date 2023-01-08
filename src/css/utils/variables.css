@@ -19,8 +19,9 @@
   --mobile-xs: 10px;
 
   /* Typography */
-  --Merr: 'Merriweather', sans-serif;
-  --serif: 'Playfair Display', serif;
+  --font-baskervville: 'Baskervville', serif;
+  --font-merriweather: 'Merriweather', serif;
+  --font-mulish: 'Mulish', sans-serif;
 
   /* Espaces */
   --space1x: 10px;

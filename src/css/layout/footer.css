@@ -3,8 +3,11 @@ footer{
     color: var(--white);
     margin: auto;
 }
+
 .mailto{
-    font-size: 8px;
+    font-family: var(--font-mulish);
+    font-weight: 200;
+    font-size: 7px;
 }
 
 .projet{
@@ -13,6 +16,8 @@ footer{
     font-size: 8px;
     display: inline-block;
     vertical-align: middle;
+    font-family: var(--font-mulish);
+    font-weight: 200;
 }
 
 
@@ -41,13 +46,14 @@ a.mailto, a.projet, a[href="http://mmimontbeliard.com"], a.nom {
 .white-line{
   display: inline-block;
   vertical-align: middle;
-  margin-left: ;
 }
 
 .language{
     text-decoration: none;
     color: var(--white);
-    font-size: 9px;
+    font-size: 10px;
+    font-family: var(--font-mulish);
+    font-weight: 200;
 }
 
 .nom,
@@ -60,7 +66,11 @@ a.mailto, a.projet, a[href="http://mmimontbeliard.com"], a.nom {
     display: inline-block;
     text-align: center;
     margin-left: 164px;
-  }
+    font-family: var(--font-mulish);
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
 .changement_langue{
     float: right;
     margin-right: 10px;

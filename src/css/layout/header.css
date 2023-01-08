@@ -1,6 +1,8 @@
 header{
     background-color: var(--pink);
-    height: 45px;
+    height: 50px;
+    position: sticky;
+    top: 0;
 }
 
 .logo{

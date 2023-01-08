@@ -1,10 +1,10 @@
+
 article,
 article div,
 article a,
 article img {
   box-sizing: border-box;
 }
-
 .disparu{
   display: none;
 }
@@ -26,12 +26,14 @@ article{
     display: flex;
     justify-content: center;
     overflow: visible;
-    font: var(--Merr);
-  }
+    font-family: var(--font-merriweather);
+    font-weight: 700;
+}
 
 article a{
     text-decoration: none;
     color: var(--black);
+    line-height: 30px;
 }
 article img{
   max-width: 100%;
@@ -41,4 +43,17 @@ article img{
     margin-left: 70px;
 }
 
+.intro{
+  font-family: var(--font-merriweather);
+}
 
+.intro h1{
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.intro p{
+  font-family: var(--font-baskervville);
+  font-weight: 400;
+  font-size: 14px;
+}
