@@ -26,13 +26,16 @@ article{
     width: 300px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
 
 article a{
     text-decoration: none;
     color: var(--black);
 }
-
+article img{
+  max-width: 100%;
+}
 
 .droite{
     margin-left: 70px;
