@@ -1,11 +1,11 @@
 footer{
     background-color: var(--pink);
     color: var(--white);
-    text-align: center;
     margin-top: auto;
+    text-align: center;
 }
 .mailto{
-    font-size: 9px;
+    font-size: 8px;
 }
 
 .projet{
@@ -20,4 +20,15 @@ footer{
 a.mailto, a.projet, a[href="http://mmimontbeliard.com"], a.nom {
     display: block;
   }
+
+footer img{
+       
+    }
+
+.dpt{
+    text-decoration: none;
+    font-size: 9px;
+    color: var(--white);
+}
+
 

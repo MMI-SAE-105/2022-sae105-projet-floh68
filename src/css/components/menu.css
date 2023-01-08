@@ -108,10 +108,3 @@ ul li a:hover{
   transition: 0s;
 }
 
-.dropdown-menu {
-  display: none;
-}
-
-.dropdown-menu.show {
-  display: flex;
-}
