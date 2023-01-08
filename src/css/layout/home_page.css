@@ -5,6 +5,9 @@ article img {
   box-sizing: border-box;
 }
 
+.disparu{
+  display: none;
+}
 article{
     box-sizing: border-box;
     background: var(--white);
@@ -31,7 +34,7 @@ article a{
 }
 
 
-#droite{
+.droite{
     margin-left: 70px;
 }
 

@@ -24,20 +24,10 @@
               }</script>
                 <ul>
                   <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
-                  <li class="dropdown" style="--i:1;"><a href="#">ARTICLES</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="/FR/musique.html">Tokyo Drift</a></li>
-                      <li><a href="/FR/livre.html">Auto design</a></li>
-                      <li><a href="/FR/espoir.html">Evolution</a></li>
-                      <li><a href="/FR/regret.html">La disparition</a></li>
-                      <li><a href="/FR/film.html">Fast&Furious 5</a></li>
-                      <li><a href="/FR/lieu.html">Détroit</a></li>
-                      </ul>
-                  </li>
-                  <li style="--i:2;"><a href="#">A PROPOS</a></li>
-                  <li style="--i:3;"><a href="#">AUTRES PROJETS</a></li>
-                  <li style="--i:4;"><a href="#">CONTACT</a></li>
-                  <li style="--i:5;"><a href="#">GLOSSAIRE</a></li>
+                  <li style="--i:1;"><a href="#">A PROPOS</a></li>
+                  <li style="--i:2;"><a href="#">AUTRES PROJETS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSAIRE</a></li>
                 </ul>
           </div>
           
@@ -49,11 +39,12 @@
       <p>Suite à un projet commun, autorama fût créé pour découvrir ce qu’il se passait dans le temps avec l’automobile, et ses avancées futures très prometteuse...</p>
       </section>
       <section>
+        <h1 class="disparu">articles</h1>
         <article onclick="window.location.href='musique.html';">
           <div><a><h2>Tokyo Drift par Teriyaki Boyz</h2>
           <img src="/public/img/icons/drifting.svg" alt="music"></a></div>
         </article>
-        <article id="droite" onclick="window.location.href='livre.html';">
+        <article class="droite" onclick="window.location.href='livre.html';">
           <div><a><h2>Auto design - les plus grands concepteurs par larry edsall</h2>
           <img src="/public/img/icons/sketch.svg" alt="livre"></a></div>
         </article>
@@ -61,7 +52,7 @@
           <div><a><h2>L’évolution de l’automobile</h2>
           <img src="/public/img/icons/evolution.svg" alt="espoir"></a></div>
         </article>
-        <article id="droite" onclick="window.location.href='regret.html';">
+        <article class="droite" onclick="window.location.href='regret.html';">
           <div><a><h2>La disparition des véhicules à moteur thermique</h2>
           <img src="/public/img/icons/interdit.svg" alt="regret"></a></div>
         </article>
@@ -69,7 +60,7 @@
           <div><a><h2>Fast & Furious 5 : un film des plus historiques</h2>
           <img src="/public/img/icons/drapeau-darrivee.svg" alt="film"></a></div>
         </article>
-        <article id="droite" onclick="window.location.href='lieu.html';">
+        <article class="droite" onclick="window.location.href='lieu.html';">
           <div><a><h2>Détroit : une ville qui a été le centre de l’automobile</h2>
           <img src="/public/img/icons/ville.svg" alt="ville"></a></div>
         </article>
@@ -81,11 +72,21 @@
     </main>
     <footer>
       <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante: fhoutmann@orange.fr</a>
-      <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
       <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-      <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="dpt" href="http://mmimontbeliard.com">MMi de Montbéliard</a></a>
+      </div>
+      <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département </a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
       <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
-      <a class="nom"><ul>HOUTMANN</ul> <ul>Florian</ul>A2</a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/index.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/index.html" class="language">EN</a>
+      </div>
     </footer>
   </body>
 </html>

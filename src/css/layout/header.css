@@ -1,4 +1,9 @@
 header{
     background-color: var(--pink);
+    height: 45px;
 }
 
+.logo{
+    width: 45px;
+    margin-left: 5px;
+}
