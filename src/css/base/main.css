@@ -7,7 +7,81 @@
 body{
   background-color: var(--blue);
 }
+.YT img{
+  width: 350px;
+  margin-left: 12.5px;
+}
 
+main p{
+  font-size: 14px;
+  font-family: var(--font-baskervville);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.sous-titre{
+  font-size: 20px;
+  font-family: var(--font-merriweather);
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.titre{
+  font-size: 30px;
+  font-family: var(--font-merriweather);
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;    
+}
+
+.aligne{
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-family: var(--font-mulish);
+  font-weight: 200;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column
+}
+
+p2{
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+p3{
+  font-size: 14px;
+  font-family: var(--font-baskervville);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.VS img{
+  width: 360px;
+}
+
+.filmo img{
+  width: 200px;
+}
+
+.filmo{
+  display: flex;
+}
 
 @media (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
   /* Style pour l'iPhone X en mode portrait */

@@ -7,40 +7,69 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="#">ABOUT</a></li>
+                  <li style="--i:2;"><a href="#">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    
+    <main>
+      <h1 class="titre">Tokyo Drift by Teriyaki Boyz</h1>
+      <div><h2 class="sous-titre">The history and background of Teriyaki Boyz</h2>
+        <p>The Teriyaki Boyz are a Japanese-American hip-hop group from Los Angeles, California. The group was formed in 2006 by brothers James and John Yokoyama, and is well known to car fans who have watched all of the Fast & Furious saga, including lead actor Vin Diesel and others.</p>
+        <p>The Teriyaki Boyz released their first album in 2006, which included the singles "Gangsta Walk" and "Rice & Curry". In 2008, they released the single "Tokyo Drift", which was featured on the Fast and Furious soundtrack. The song peaked at number fifty-five on Billboard's Hot R&B/Hip-Hop Songs chart.</p>
+        <p>In 2009, they released their second album, entitled The Movement: Music Inspired by the Film Public Enemies. The album's first single "Nothin 'Like Us" peaked at number ninety-six on Billboard's Hot R&B/Hip-Hop Songs chart.</p>
+      </div>
+      <a class="YT" href="https://www.youtube.com/watch?v=iuJDhFRDx9M"><img rel="img" alt="video" src="/public/img/music/VideoYT.webp"></a>
+      <div><h2 class="sous-titre">Link to Fast & Furious 3</h2></div>
+        <p>The music of tokyo drift by Teriyaki boyz is closely linked with fast and furious 3. Indeed, the music is used in the film, which made this song by Teriyaki boyz known to a large audience all over the world, since the whole Fast and Furious saga was a success all over the world, and inspired many to become passionate about cars and big engines.</p>
+      <div><h2 class="sous-titre">What happens in the movies is not to be reproduced...</h2>
+        <p>Indeed, in France in particular, drifting outside of official track events is prohibited and punished by law. Nevertheless, it will remain your choice to do it on the public road, but please think about the other users 😊. This can lead to serious accidents... Be careful! An accident happens so quickly...</p>
+      </div>
+      <div class="aligne">
+      <a class="YT"><img rel="img" alt="drift" src="/public/img/music/drift.webp"></a>
+      <p2>Photo referring to the drifting scenes in Fast & Furious 3 in a car park</p2>
+      </div>
+    </main>
+
+
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/musique.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/musique.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -7,73 +7,96 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="#">Tokyo Drift</a></li>
-            <li><a href="#">Auto design</a></li>
-            <li><a href="#">Evolution</a></li>
-            <li><a href="#">La disparition</a></li>
-            <li><a href="#">Fast&Furious 5</a></li>
-            <li><a href="#">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="#">ABOUT</a></li>
+                  <li style="--i:2;"><a href="#">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
+          
       </nav>
     </header>
+    
     <main>
-      <section><h1>INTRODUCTION :D</h1>
-      <p>Suite à un projet commun, autorama fût créé pour découvrir ce qu’il se passait dans le temps avec l’automobile, et ses avancées futures très prometteuse...</p>
+      <section class="intro"><h1>INTRODUCTION :D</h1>
+      <p>Following a joint project, autorama was created to discover what was happening with the automobile in the past, and its very promising future advances...</p>
       </section>
       <section>
-        <article>
-          <a href="musique.html" id="droite"><button><h2>Tokyo Drift par Teriyaki Boyz</h2>
-          <img src="/public/img/icons/drifting.svg" alt="music">
-        </button></a>
-          
+        <h1 class="disparu">articles</h1>
+        <article onclick="window.location.href='musique.html';">
+          <div><a><h2>Tokyo Drift by   Teriyaki Boyz</h2>
+          <img src="/public/img/icons/drifting.svg" alt="music"></a></div>
         </article>
-        <article>
-          <a href="livre.html" id="gauche"><button><h2>Auto design - les plus grands concepteurs par larry edsall</h2>
-          <img src="/public/img/icons/sketch.svg" alt="livre"></button></a>
+        <article class="droite" onclick="window.location.href='livre.html';">
+          <div><a><h2>Auto design - the greatest designers by larry edsall</h2>
+          <img src="/public/img/icons/sketch.svg" alt="livre"></a></div>
         </article>
-        <article>
-          <a href="musique.html"><button><h2>L’évolution de l’automobile</h2>
-          <img src="/public/img/icons/evolution.svg" alt="espoir"></button></a>
+        <article onclick="window.location.href='espoir.html';">
+          <div><a><h2>The evolution of the automobile</h2>
+          <img src="/public/img/icons/evolution.svg" alt="espoir"></a></div>
         </article>
-        <article>
-          <a href="regret.html" id="gauche"><button><h2>La disparition des véhicules à moteur thermique</h2>
-          <img src="/public/img/icons/interdit.svg" alt="regret"></button></a>
+        <article class="droite" onclick="window.location.href='regret.html';">
+          <div><a><h2>The disappearance of combustion engine vehicles</h2>
+          <img src="/public/img/icons/interdit.svg" alt="regret"></a></div>
         </article>
-        <article>
-          <a href="film.html"><button><h2>Fast & Furious 5 : un film des plus historiques</h2>
-          <img src="/public/img/icons/drapeau-darrivee.svg" alt="film"></button></a>
+        <article onclick="window.location.href='film.html';">
+          <div><a><h2>Fast & Furious 5 : a most historic film</h2>
+          <img src="/public/img/icons/drapeau-darrivee.svg" alt="film"></a></div>
         </article>
-        <article>
-          <a href="musique.html" id="gauche"><button href="lieu.html"><h2><a>Détroit : une ville qui a été le centre de l’automobile</a></h2>
-          <img src="/public/img/icons/ville.svg" alt="ville"></button></a>
+        <article class="droite" onclick="window.location.href='lieu.html';">
+          <div><a><h2>Detroit : a city that was once the centre of the automobile</h2>
+          <img src="/public/img/icons/ville.svg" alt="ville"></a></div>
         </article>
       </section>
-    
-      <carousel></carousel>
+      <h1 class="gta">GTA V Screenshots</h1>
+      <carousel class="carousel">
+        
+        <div class="slider">
+          <span style="--i:1;"><img src="/public/img/carousel/BMW.webp" alt=""></span>
+          <span style="--i:2;"><img src="/public/img/carousel/chiron.webp" alt=""></span>
+          <span style="--i:3;"><img src="/public/img/carousel/chiron2.webp" alt=""></span>
+          <span style="--i:4;"><img src="/public/img/carousel/ferrari.webp" alt=""></span>
+          <span style="--i:5;"><img src="/public/img/carousel/mustang.webp" alt=""></span>
+          <span style="--i:6;"><img src="/public/img/carousel/porsche.webp" alt=""></span>
+          <span style="--i:7;"><img src="/public/img/carousel/RS6.webp" alt=""></span>
+          <span style="--i:8;"><img src="/public/img/carousel/twingo.webp" alt=""></span>
+        </div>
+      </carousel>
     </main>
     <footer>
-      <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-      <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
       <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-      <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-      <a href="http://mmimontbeliard.com">"<img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
-      <a class="nom">HOUTMANN Florian A2</a>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/index.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/index.html" class="language">EN</a>
+      </div>
     </footer>
   </body>
 </html>
