@@ -31,5 +31,5 @@ Soyez attentifs à l'ordre d'import :
 
 /* Composants */
 @import "components/menu.css";
-@import "layout/carousel.css";
-@import "vendors/normalize.css"
+@import "components/carousel.css";
+@import "vendors/normalize.css";

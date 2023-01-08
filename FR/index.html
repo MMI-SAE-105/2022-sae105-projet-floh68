@@ -8,32 +8,42 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
     <link rel="javascript" href="/src/javascript/script.js"/>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="/FR/index.html">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="/FR/musique.html">Tokyo Drift</a></li>
-            <li><a href="/FR/livre.html">Auto design</a></li>
-            <li><a href="/FR/espoir.html">Evolution</a></li>
-            <li><a href="/FR/regret.html">La disparition</a></li>
-            <li><a href="/FR/film.html">Fast&Furious 5</a></li>
-            <li><a href="/FR/lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
+                  <li class="dropdown" style="--i:1;"><a href="#">ARTICLES</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/FR/musique.html">Tokyo Drift</a></li>
+                      <li><a href="/FR/livre.html">Auto design</a></li>
+                      <li><a href="/FR/espoir.html">Evolution</a></li>
+                      <li><a href="/FR/regret.html">La disparition</a></li>
+                      <li><a href="/FR/film.html">Fast&Furious 5</a></li>
+                      <li><a href="/FR/lieu.html">Détroit</a></li>
+                      </ul>
+                  </li>
+                  <li style="--i:2;"><a href="#">A PROPOS</a></li>
+                  <li style="--i:3;"><a href="#">AUTRES PROJETS</a></li>
+                  <li style="--i:4;"><a href="#">CONTACT</a></li>
+                  <li style="--i:5;"><a href="#">GLOSSAIRE</a></li>
+                </ul>
+          </div>
+          
       </nav>
     </header>
+    
     <main>
       <section><h1>INTRODUCTION :D</h1>
       <p>Suite à un projet commun, autorama fût créé pour découvrir ce qu’il se passait dans le temps avec l’automobile, et ses avancées futures très prometteuse...</p>

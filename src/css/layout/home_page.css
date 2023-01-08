@@ -10,7 +10,7 @@ article{
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0 0 10px #000000,
-                  0 0 10px #000000;
+                0 0 10px #000000;
     margin: 15px;
     margin-top: 10px;
     margin-left: 8px;
@@ -19,7 +19,7 @@ article{
     background-color: transparent;
     text-align: center;
     text-decoration: none;
-    height: 190px;
+    height: 200px;
     width: 300px;
     display: flex;
     justify-content: center;
@@ -33,7 +33,6 @@ article a{
 
 #droite{
     margin-left: 70px;
-    height: auto;
 }
 
 
