@@ -18,15 +18,15 @@ article{
     margin-top: 10px;
     margin-left: 8px;
     font-size: 20px;
-    font: ;
     background-color: transparent;
     text-align: center;
     text-decoration: none;
-    height: 200px;
+    height: auto;
     width: 300px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;
+    font: var(--Merr);
   }
 
 article a{

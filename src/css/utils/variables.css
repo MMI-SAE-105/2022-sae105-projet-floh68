@@ -4,7 +4,7 @@
   --black: rgba(0, 0, 0, 1);
   --pink: rgba(66, 3, 56, 1);
   --blue: rgba(216, 216, 240, 1);
-  --pink2: rgb(110, 6, 93);
+  --pink: rgb(110, 6, 93);
 
 
   /* Text-size styles */
@@ -19,7 +19,7 @@
   --mobile-xs: 10px;
 
   /* Typography */
-  --sans-serif: 'Inter', sans-serif;
+  --Merr: 'Merriweather', sans-serif;
   --serif: 'Playfair Display', serif;
 
   /* Espaces */

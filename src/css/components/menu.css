@@ -5,6 +5,7 @@
   height: 20px;
   width: 250px;
   z-index: 100;
+  font: var(--Merr);
 }
 
 .toggle{

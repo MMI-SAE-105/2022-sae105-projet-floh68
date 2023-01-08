@@ -1,6 +1,7 @@
 footer{
     background-color: var(--pink);
     color: var(--white);
+    margin: auto;
 }
 .mailto{
     font-size: 8px;
