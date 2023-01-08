@@ -1,9 +1,8 @@
 footer {
-    position: absolute;
     background-color: var(--pink);
     color: var(--white);
-    margin: auto;
-    width: 375px;
+    text-align: center;
+    position: relative;
   }
 .mailto{
     font-family: var(--font-mulish);
@@ -68,13 +67,13 @@ a.mailto, a.projet, a[href="http://mmimontbeliard.com"], a.nom {
     font-family: var(--font-mulish);
     font-weight: 200;
     margin-bottom: 15px;
-    display: block;
+    display: inline-block;
   }
 .changement_langue{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 10px;
-    margin-bottom: 15px;
     display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 12.5px;
 }
