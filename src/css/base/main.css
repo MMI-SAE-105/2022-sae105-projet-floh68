@@ -46,21 +46,23 @@ main p{
   text-align: center;    
 }
 
-.aligne{
-  display: inline-block;
+.aligne p{
   align-items: center;
   text-align: center;
   font-size: 10px;
   font-family: var(--font-mulish);
   font-weight: 200;
   line-height: 16px;
-  display: flex;
-  flex-direction: column
-}
-
-p2{
+  display: block;
+  flex-direction: column;
   margin-top: -5px;
   margin-bottom: 10px;
+}
+
+.aligne img{
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 p3{
