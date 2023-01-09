@@ -7,40 +7,54 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
+                  <li style="--i:1;"><a href="#">A PROPOS</a></li>
+                  <li style="--i:2;"><a href="#">AUTRES PROJETS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSAIRE</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    
+    <main>
+        
+    </main>
+
+
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/musique.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/musique.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

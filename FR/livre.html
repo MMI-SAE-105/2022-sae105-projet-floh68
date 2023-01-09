@@ -7,40 +7,70 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
+                  <li style="--i:1;"><a href="#">A PROPOS</a></li>
+                  <li style="--i:2;"><a href="#">AUTRES PROJETS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSAIRE</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    
+    <main>
+      <h1 class="titre">Auto design - les plus grands concepteurs par Larry Edsall</h1>
+      
+      <div><h2 class="sous-titre">Qui est Larry Edsall ?</h2>
+        <p>Larry Edsall est un ancien journaliste et le fondateur de l'International Association of Business Communicators. Il a été écrivain, conférencier et consultant pendant de nombreuses années et a écrit plus de 10 livres sur la communication d'entreprise. </p>
+        <p>Larry Edsall est un auteur, conférencier et consultant américain en relations publiques. Il est né en 1937 à Chicago dans l'Illinois de parents tous deux journalistes. Larry Edsall a fréquenté l'Université de l'Illinois à Urbana-Champaign où il s'est spécialisé en journalisme et en sciences politiques. Il a obtenu en 1959 un baccalauréat. </p>
+        <p>En 1961, Larry Edsall a épousé sa femme Judy qui est également journaliste. Ils ont ensemble deux fils nommés John et David qui sont également journalistes. En 1964, Larry Edsall est diplômé de l'Université Northwestern avec un diplôme MFA en écriture créative qu'il a utilisé pour enseigner des cours à l'Université DePaul jusqu'à sa retraite de l'enseignement en 1993 ainsi que pour écrire plus de 10 livres sur la communication d'entreprise, y compris « Les quatre étapes vers le succès ». </p>
+        <p>Il est l'un des plus grands passionnés de voitures aux États-Unis, et il est dans le secteur automobile depuis son adolescence. Son premier emploi a été celui de préposé à une station-service, où il a appris à réparer des voitures et à les conduire également. Il a ensuite travaillé comme mécanicien automobile et a finalement ouvert sa propre concession. Larry est dans le secteur de l’automobile depuis plus de 40 ans, et il est toujours aussi fort. </p>
+      <a class="YT"><img rel="img" alt="bmw" src="/public/img/livre/3GenerationBMW.webp"></a>
+      <div><h2 class="sous-titre">Résumé du livre</h2></div>
+      <p>L'automobile a été inventée, puis affinée au fil des ans, par des hommes à l'imagination toute particulière et passionnés de mécanique. Plus tard, les concepteurs ont doté ce mécanisme d'enveloppes aux formes attrayantes. Ainsi, de simples médiums se sont transformés en véritables créations artistiques : ils sont considérés comme des chefs-d'œuvre qui fascinent, captivent et témoignent d'un art pratiqué par de grands maîtres.</p>
+      <a class="YT"><img rel="img" alt="bmw" src="/public/img/livre/couvertureLivre.webp"></a>
+      <div><h2 class="sous-titre">Extrait du livre :</h2>
+        <p>Dans les années 1970, Ital Design dessine aussi le concept-car Porsche Tapiro, l'Alfasud Caimano, l'Audi Karmann As de Pique, la Maserati Boome rang, la Hyundai Pony Coupé (qui marque le début d'une collaboration avec la firme sud-coréenne), ainsi que le New York Taxi, un concept-car réalisé pour le musée d'Art moderne de New York. Conçu par Giugiaro, ce véhicule urbain, petit mais spacieux (six places), peut facilement accueillir un passager en chaise roulante ou même une poussette. </p>
+        <p>Ital Design conçoit et construit la MI pour BMW. La firme dessine aussi la Lancia Delta, l'Audi 80 et celle qui, pour beaucoup, est le prototype qui a inauguré l'ère des monospaces: la Lancia Megagamm basée sur le New York Taxi. En 1982, Giugiaro améliore le concept de monospace avec la Capsula, si haute qu'elle ressemble à une voiture à deux étages. Plus tard, Giugiaro transformera le minivan/monospace en maxivan avec le prototype Columbus. </p>
+        <p>Il y a des prototypes pour Renault, Saab, Fiat, Subaru et Toyota, mais aussi des prototypes de recherche comme la Machimoto, un hybride automobile/moto oyclette. Puis, en 1988, la Sgard, l'Aspid et l'Aztec, de surprenants prototypes avant-gardistes, comme l'avait été, trente ans auparavant, la BAT de Bertone. Quelques années plus tard, le fils de Giugiaro, Fabri zio, âgé de 26 ans, fait ses débuts dans le design auto mobile avec trois prototypes Nazca pour BMW. </p>
+        <p>L'idée de relancer Bugatti donne naissance à de fasci nants prototypes réalisés au cours des années 1990. tandis que sont également conçus une série de concept-cars et de voitures de série: la Jaguar Kensington, la Lucciola, la Lamborghini Cala, la Formula 4 et la Formula Hammer, l'Alfa Romeo Scighera et la Volkswagen W12 Synchro. Puis Ital design célèbre son trentième anniversaire avec le prototype Structura, caractérisé par le châssis en "vue spatiale" en aluminium. </p>
+      </div>
+    </main>
+
+
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/musique.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/musique.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

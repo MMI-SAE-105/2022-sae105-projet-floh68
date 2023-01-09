@@ -79,10 +79,19 @@ p3{
 
 .filmo img{
   width: 200px;
+  display: block;
+  margin: auto;
 }
 
-.filmo{
-  display: flex;
+.sous-titre2 {
+  position: relative;
+}
+.sous-titre2 h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 @media (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
