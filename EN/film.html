@@ -1,25 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test menu</title>
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" 
-    rel="stylesheet">
-    <script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js" 
-    type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Autorama</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
-    <video
-  width=400
-  height=200
-  id="trailer"
-  controls
-  muted
-  class="cld-video-player cld-video-player-skin-dark">
-</video>
-
-
-</body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
+                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titre">Fast & Furious 5: a most historic film</h1>
+      <div><h2 class="sous-titre">Summary of the film</h2></div>
+      <p>After freeing Dom Torreto (Vin Diesel), Brian O'Conner (Paul Walker) and Mia Toretto (Jordana Brewster) hide out in a Rio slum. There, together, they plan a new coup, the final coup, sure to save them from danger. Unfortunately, it's a trap. The cars they wanted to steal were confiscated by American DEA agents because they belonged to drug lord Hernan Reyes (Joaquim de Almeida).</p>.
+      <p>In this case, one of these cars contains a potentially intrusive microchip that will now be in the hands of Toretto, Brian and Mia. They find themselves effectively hunted by both the Rio de Janiero gangsters and American law enforcement represented by the redoubtable Luke Hobbs (Dwayne Johnson).</p> <p>
+      <p>Hobbs captures Toretto and his gang but is in turn attacked by Reyes' men. In an unfortunate position, Hobbs is indebted to Toretto for his salvation. He will remember this later.</p>
+      <p>In his final grandstand, Toretto has assembled a crack team to rob Reyes. Han, Gisele, Tej and Pearce lend him a hand. The goal is to pocket the jackpot for greater freedom in a non-extraditing country. The robbery is successful. Reyes is killed in an unfortunate car accident. Hobbs gives everyone 24 hours to escape. They won't need that much. Han and Gisele were reeling from a great love affair in Europe. Tej and Pearce will live the high life. O`Conner relaxed on the sandy beach with Mia, pregnant to the teeth. Despite this, the speed demon still tickled him. He wants to compete with Dominic in a mini-game about who can drive the fastest.</p>.
+        <a class="filmo"><img rel="img" alt="ville" src="/public/img/film/Fast&Furious5.webp"></a>
+      <div><h2 class="sous-titre">Presentation of the director</h2></div>
+      <p>Justin Lin is a Taiwanese-American director. He was born in California and raised in Taiwan. He is one of the most successful Asian-American Hollywood directors, as well as one of the most successful directors in general.</p>
+      <p>Lin's career includes work on such films as Better Luck Tomorrow, Annapolis, The Fast and the Furious: Tokyo Drift, Fast & Furious 6, Star Trek Beyond and Star Trek Beyond.</p>
+      <div class="video-container">
+        <video src="/public/video/Fast&Furious5.mp4" controls></video>
+      </div>
+      <a href="/EN/filmographie.html">
+        <div class="sous-titre2">
+          <img rel="img" alt="filmo" src="/public/img/film/Film.webp">
+          <h2>Filmography of the director</h2>
+        </div>
+      </a>
+    </main>
+    <footer>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/film.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/film.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

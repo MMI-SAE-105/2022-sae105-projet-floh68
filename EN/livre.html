@@ -7,40 +7,67 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
+                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    <main>
+      <h1 class="titre">Auto design - the greatest designers by Larry Edsall</h1>
+      
+      <div><h2 class="sous-titre">Who is Larry Edsall ?</h2></div>
+      <p>Larry Edsall is a former journalist and the founder of the International Association of Business Communicators. He has been a writer, speaker and consultant for many years and has written over 10 books on business communication. </p>
+      <p>Larry Edsall is an American public relations author, speaker and consultant. He was born in 1937 in Chicago, Illinois to parents who were both journalists. Larry Edsall attended the University of Illinois at Urbana-Champaign where he majored in journalism and political science. He graduated in 1959 with a bachelor's degree. </p>
+      <p>In 1961, Larry Edsall married his wife Judy who is also a journalist. Together they have two sons named John and David who are also journalists. In 1964, Larry Edsall graduated from Northwestern University with an MFA degree in creative writing which he used to teach courses at DePaul University until his retirement from teaching in 1993 as well as write more than 10 books on business communication, including "The Four Steps to Success." </p>
+      <p>He is one of the biggest car enthusiasts in the United States, and has been in the automotive business since his teens. His first job was as a gas station attendant, where he learned to fix cars and drive them as well. He then worked as an auto mechanic and eventually opened his own dealership. Larry has been in the automotive business for over 40 years, and he is still going strong. </p>
+      <a class="YT"><img rel="img" alt="bmw" src="/public/img/livre/3GenerationBMW.webp"></a>
+      <div><h2 class="sous-titre">Summary of the book</h2></div>
+      <p>The automobile was invented and refined over the years by men with a special imagination and a passion for mechanics. Later, designers endowed this mechanism with attractively shaped casings. Thus, simple mediums were transformed into true artistic creations: they are considered masterpieces that fascinate, captivate and testify to an art practiced by great masters.</p>
+      <a class="YT"><img rel="img" alt="bmw" src="/public/img/livre/couvertureLivre.webp"></a>
+      <div><h2 class="sous-titre">Excerpt from the book :</h2>
+        <p>In the 1970s, Ital Design also designed the Porsche Tapiro concept car, the Alfasud Caimano, the Audi Karmann Ace of Spades, the Maserati Boome rang, the Hyundai Pony Coupé (which marked the beginning of a collaboration with the South Korean firm), as well as the New York Taxi, a concept car made for the Museum of Modern Art in New York. Designed by Giugiaro, this small but spacious (six seats) urban vehicle can easily accommodate a wheelchair passenger or even a pram. </p>
+        <p>Ital Design designs and builds the MI for BMW. The firm also designs the Lancia Delta, the Audi 80 and the one that, for many, is the prototype that inaugurated the era of the minivan: the Lancia Megagamm based on the New York Taxi. In 1982, Giugiaro improved the MPV concept with the Capsula, so high that it looked like a double-decker. Later, Giugiaro would transform the minivan/monospace into a maxivan with the Columbus prototype. </p>
+        <p>There are prototypes for Renault, Saab, Fiat, Subaru and Toyota, but also research prototypes such as the Machimoto, a hybrid car/motorcycle-bicycle. Then, in 1988, the Sgard, the Aspid and the Aztec, surprisingly avant-garde prototypes, like the Bertone BAT thirty years earlier. A few years later, Giugiaro's son Fabri zio, aged 26, made his debut in mobile car design with three Nazca prototypes for BMW. </p>
+        <p>The idea of relaunching Bugatti gave rise to some fascinating prototypes during the 1990s. while a series of concept cars and production cars were also designed: the Jaguar Kensington, the Lucciola, the Lamborghini Cala, the Formula 4 and Formula Hammer, the Alfa Romeo Scighera and the Volkswagen W12 Synchro. Then Ital design celebrates its thirtieth anniversary with the Structura prototype, characterised by the aluminium "space view" chassis. </p>
+      </div>
+    </main>
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/livre.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/livre.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

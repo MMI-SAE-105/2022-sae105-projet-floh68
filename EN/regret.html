@@ -7,40 +7,58 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
+                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    <main>
+      <h1 class="titre">The disappearance of combustion engine vehicles</h1>
+      <div><h2 class="sous-titre">The famous petrol vehicles..</h2></div>
+      <p>Gasoline-powered vehicles have many advantages, including the ability to transport people and goods quickly and easily. However, the invention of the internal combustion engine has led to some surprising results. In recent decades, the number of vehicles using this fuel has declined as car owners have chosen to purchase electric or hybrid vehicles. The decline in the use of gasoline-powered vehicles is a testament to humanity's environmental awareness and love for their cars. The decline in the use of gasoline-powered vehicles is a testament to humanity's environmental awareness and love for their cars.</p>
+      <p>A number of factors have led to a decline in the use of petrol vehicles. Firstly, car ownership was mainly confined to urban areas at the time of invention. As a result, people lived further away from petrol stations than today. However, car owners now have more transport options; therefore, some choose not to drive if they live too far from a petrol station. Apart from this, people in rural areas often have to walk several blocks to a petrol station if they want to fill up. Although some people still choose to drive far from home, the average distance people drive today is much less than it was in the past, as many move to the city for example.</p>
+        <a class="YT"><img rel="img" alt="VS" src="/public/img/dispar/voitureElectrique.webp"></a>
+      <div><h2 class="sous-titre">The law of 2035…</h2></div>
+          <p>Indeed, recently the European Parliament voted in favour of banning the sale of new vehicles that are equipped with combustion engines (diesel or petrol) from 2035. The European Union has decided to stop the sale of its vehicles, which is also included in a set of texts presented by the European Commission in 2021. To reach the goal, by 2030, of reducing CO2 emissions by 55% compared to the 1990s, and also to aim for “climate neutrality” by 2050.</p>
+      <a class="YT"><img rel="img" alt="VS" src="/public/img/dispar/FinDesThermiques.webp"></a>
+    </main>
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/regret.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/regret.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

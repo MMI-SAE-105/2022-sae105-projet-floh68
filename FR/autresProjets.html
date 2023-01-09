@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Autorama</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
+                  <li style="--i:1;"><a href="/FR/aPropos.html">A PROPOS</a></li>
+                  <li style="--i:2;"><a href="/FR/autresProjets.html">AUTRES PROJETS</a></li>
+                  <li style="--i:3;"><a href="/FR/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSAIRE</a></li>
+                </ul>
+          </div>
+      </nav>
+    </header>
+    <main>
+        <h1 class="projet__titre">Voici d’autres projets des élèves MMI 1 de notre groupe de TP</h1>
+        <p class="projet__titre--date">2022-2023</p>
+        <ul class="projet">
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="../404.html">A journey between dreams and reality</a></h2>
+                <p>Viktor GHIRARDELLI</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="http://racines.juliaduflot.fr/">Racines</a></h2>
+                <p>Julia DUFLOT</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="http://xto1.dany-galmiche.fr/">X to 1</a></h2>
+                <p>Dany GALMICHE</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="http://souvenir-d-avant.faris-halepovic.fr/">Souvenir d’avant</a></h2>
+                <p>Faris HALEPOVIC</p>
+            </li>
+            <li class="project__list">
+                <h2 class="projet__name"><a href="https://autorama.fhoutmann.fr/">Autorama</a></h2>
+                <p>Florian HOUTMANN</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="project__name"><a href="http://x-plore.samighorzi.fr/">X’plore</a></h2>
+                <p>Sami GHORZI</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="https://reverse.julesdupaquier.fr/">Reverse</a></h2>
+                <p>Jules DUPAQUIER</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="http://tick-tock-time.jfleurent.fr/">Tick Tock Time</a></h2>
+                <p>Julien FLEURENT</p>
+            </li>
+            <li class="project__list">
+                <h2 class="projet__name"><a href="https://endless-war.maelgrosjean.fr/">Endless War</a></h2>
+                <p>Maël GROSJEAN</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="../404.html">Liber’Thé</a></h2>
+                <p>Maxime DE MOURA</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="../404.html">Paris une ressource infinie</a></h2>
+                <p>Baptiste GUERAULT</p>
+            </li>
+            <li class="projet__list">
+                <h2 class="projet__name"><a href="../404.html">Massilia</a></h2>
+                <p>Thomas HADJ-AISSA</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante: fhoutmann@orange.fr</a>
+        <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+        </div>
+        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département </a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+        <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+        <div class="nom">
+          HOUTMANN<br>
+          Florian<br>
+          A2  
+        </div>
+        <div class=changement_langue>
+          <a href="/FR/autresProjets.html" class="language">FR</a>
+              <div class="white-line"></div>
+              <a href="/EN/autresProjets.html" class="language">EN</a>
+        </div>
+      </footer>
+    </body>
+  </html>

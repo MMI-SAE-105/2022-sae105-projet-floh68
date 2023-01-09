@@ -113,3 +113,62 @@ p3{
   /* Style pour le Xiaomi Redmi Note 11 en mode paysage */
 }
 
+
+
+/* Style pour le titre du projet */
+.projet__titre {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style pour la date du projet */
+.projet__titre--date {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style pour la liste des projets */
+.projet {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  display: block;
+}
+
+/* Style pour chaque projet de la liste */
+.projet__list {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+/* Style pour le titre du lien du projet */
+.projet__name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour le nom de l'auteur du projet */
+.projet__list p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+/* Style pour le lien du projet */
+.projet__name a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style pour les liens du projet sur hover */
+.projet__name a:hover {
+  color: #00b8d4;
+}

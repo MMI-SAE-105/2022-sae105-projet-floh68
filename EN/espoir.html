@@ -7,40 +7,65 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
+                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    <main>
+      <h1 class="titre">The evolution of the automobile</h1>
+      <div><h2 class="sous-titre">The history of the car and its evolution over the last 200 years</h2></div>
+      <p>The car is a popular mode of transport, and has been for over 100 years. What has changed in the last 200 years?</p>
+      <p>In 1885, the first car was invented by Karl Benz. It was the first automobile powered by an internal combustion engine. The invention of this vehicle sparked an industrial revolution that would change the world forever. It also helped stimulate a new era of road travel and exploration for people who had never experienced it before. Prior to this invention, people used horse-drawn carriages as their primary means of transport.</p> <p>The first carriages were not designed to be used by the public.
+      <p>The early carriages were not very attractive to look at or drive because they were so heavy and cumbersome without suspension systems or shock absorbers. This meant that drivers had to be very careful when driving over rough terrain or on roads with potholes, as this could lead to serious injury if they hit them too hard or too fast. In addition, these early automobiles did not have windshields, so drivers had to wear goggles to protect themselves.</p>.
+      <div><h2 class="sous-titre">The future of the automobile and what it holds for us...</h2></div>
+        <p>The future of the car is still uncertain. There are many different opinions on what cars will look like in 2025. Some say that the car of the future will be driverless, while others think it will be electric. Some people think that cars will no longer even exist and that instead we will all be using public transport or personal flying vehicles.</p>
+        <a class="YT"><img rel="img" alt="VS" src="/public/img/evo/Avant-apres_automobile.webp"></a>
+      <div><h2 class="sous-titre">Economic and environmental impacts of cars on society</h2></div>
+      <p>It is no secret that cars have a huge impact on the environment and our society. As we move into the future, it is important to understand how these impacts will change.</p>
+      <p>Cars are an essential part of modern life, but they also have a huge environmental and economic impact on society. Cars consume more energy than any other form of transport and account for almost a third of all global greenhouse gas emissions. Cars also create traffic congestion, air pollution, noise pollution and accidents that cost lives.</p> <p>The car industry is a major contributor to the global economy.
+      <p>The automotive industry has been working to address these problems by developing more efficient engines, creating low-emission vehicles with electric motors or hydrogen fuel cells, and developing new technologies such as smart cars that can communicate with other cars to reduce accidents.</p>
+      <div><h2 class="sous-titre">In conclusion...</h2></div>
+      <p>Innovation is the key to success in any industry. The automotive industry is no exception. Innovation has long been a constant driver of growth in this industry. It will continue to do so in the future too.</p>
+      <p>The automotive industry is one of the most dynamic industries today and will be so in the future. It provides efficient, safe and reliable vehicles to people around the world. The automotive industry is one of the most dynamic industries today and will be in the future.</p>
+    </main>
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/espoir.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/espoir.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

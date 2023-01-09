@@ -7,40 +7,76 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
+                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    <main>
+      <h1 class="titre">Detroit: a city that was once the centre of the automobile</h1>
+      <a class="YT" href="https://goo.gl/maps/PPEg9tW2dN9tFZmk8"><img rel="img" alt="video" src="/public/img/detroit/DetroitLocalisation.webp"></a>
+      <div><h2 class="sous-titre">The role of auto manufacturing in Detroit's economic stability</h2></div>
+      <p>Detroit has been known as the birthplace of the automobile industry for over 100 years. The city's economic stability relied heavily on this industry, but as cars became more and more popular and technology advanced, Detroit's economy was in decline.</p>
+      <p>The auto manufacturing industry is on the rise again with companies like Ford investing $700 million in their Michigan plants. It's a sign that Detroit is starting to recover from its economic slump.</p> <p>
+        <div><h2 class="sous-titre">How Detroit became the centre of the auto industry (in a nutshell..)</h2></div>
+        <p>Detroit has been known as the cradle of the automotive industry for over 100 years. The city's economic stability relied heavily on this industry, but as cars became more and more popular and technology advanced, Detroit's economy was in decline.</p>
+        <p>The auto manufacturing industry is on the rise again with companies like Ford investing $700 million in their Michigan plants. It's a sign that Detroit is starting to recover from its economic slump.</p> <p>The auto manufacturing industry is on the rise again with companies like Ford investing $700 million in their Michigan plants.
+        <p>Detroit has long been the centre of the automotive industry. It was founded by French-Canadian fur trader Antoine Laumet de La Mothe, Sieur de Cadillac.Detroit has also been home to some of the biggest names in the automotive industry, including General Motors and Ford Motor Company. The city's strategic location along the Great Lakes and the Detroit River made it an ideal place for transportation and commerce. The city's population exploded in the early 20th century with a large influx of European immigrants from countries such as Italy, Poland, Ukraine and Germany. From then on, Detroit became a major industrial centre with a diversified economy in 1907 when General Motors (GM) was founded there.</p>
+      <div class="aligne">
+        <a class="VS"><img rel="img" alt="ville" src="/public/img/detroit/DetroitPhoto.webp"></a>
+        <p>Detroit, Michigan: cultural atmosphere, eclectic experiences, vibrant city</p>
+      </div>
+      <div><h2 class="sous-titre">Le déclin à long terme de Detroit et ses raisons..</h2>
+        <p>Detroit is one of the most iconic cities in the United States. It is also one of the most economically deprived areas in America. The city has been in long-term decline since the 1950s and this continues to this day. Detroit's population has fallen from 1,850,000 to 677,000 over the years and continues to decline.</p>
+          <p>The reasons for this decline are complex but can be summarised as follows:</p>
+          <p>- Decline in manufacturing industry</p>
+          <p>- High unemployment rates</p>
+          <p>- Lack of investment in public services and infrastructure</p>
+          <p>- Poor education system</p>
+          <p>- Racial tension</p>
+      </div>
+      <div class="aligne">
+        <a class="VS"><img rel="img" alt="usine" src="/public/img/detroit/AvantApresUsine.webp"></a>
+        <p>A before and after of auto plants in Detroit</p>
+      </div>
+    </main>
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/lieu.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/lieu.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>
