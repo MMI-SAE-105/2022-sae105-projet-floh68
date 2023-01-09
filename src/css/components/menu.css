@@ -1,4 +1,4 @@
-.menu{
+header .menu{
   position: absolute;
   top: 0;
   right: 0;
@@ -8,7 +8,7 @@
   font: var(--font-merriweather);
 }
 
-.toggle{
+header .toggle{
   position: relative;
   top: 0;
   left: 0;
@@ -22,23 +22,23 @@
   padding: 5px 20px;
 }
 
-.toggle::before{
+header .toggle::before{
   content: '';
   margin-right: 10px;
 
 }
 
-.toggle.active::before{
+header .toggle.active::before{
   content: '';
 }
 
-.toggle span{
+header .toggle span{
   position: relative;
   width: 20px;
   height: 50px;
 }
 
-.toggle span::before{
+header .toggle span::before{
   content: '';
   position: absolute;
   top: 20px;
@@ -49,7 +49,7 @@
   transition: 0.5s;
 }
 
-.toggle span::after{
+header .toggle span::after{
   content: '';
   position: absolute;
   bottom: 20px;
@@ -60,25 +60,25 @@
   transition: 0.5s;
 }
 
-.toggle.active span::before{
+header .toggle.active span::before{
   transform: rotate(225deg);
   top: 24px;
 }
 
-.toggle.active span::after{
+header .toggle.active span::after{
   transform: rotate(135deg);
   bottom: 24px;
 }
 
 
-ul{
+header ul{
   position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-ul li{
+header ul li{
   position: relative;
   list-style: none;
   transition: 0.5s;
@@ -88,13 +88,13 @@ ul li{
   transition-delay: calc(0.1s * var(--i));
 }
 
-.menu.active ul li{
+header .menu.active ul li{
   visibility: visible;
   opacity: 1;
   transform: translateX(0px);
 }
 
-ul li a{
+header ul li a{
   position: relative;
   text-decoration: none;
   display: block;
@@ -105,7 +105,7 @@ ul li a{
   transition: 0.5s;
 }
 
-ul li a:hover{
+header ul li a:hover{
   background: var(--pink2);
   transition: 0s;
 }
