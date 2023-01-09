@@ -7,40 +7,61 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
+                  <li style="--i:1;"><a href="#">ABOUT</a></li>
+                  <li style="--i:2;"><a href="#">OTHERS PROJECTS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    
+    <main>
+      <h1 class="titre">La disparition des véhicules à moteur thermique</h1>
+      <div><h2 class="sous-titre">Les fameux véhicules à essence..</h2>
+        <p>Les véhicules à essence présentent de nombreux avantages, notamment la capacité de transporter des personnes et des marchandises rapidement et facilement. Cependant, l'invention du moteur à combustion interne a conduit à des résultats surprenants. Au cours des dernières décennies, le nombre de véhicules utilisant ce carburant a diminué car les propriétaires de voitures ont choisi d'acheter des véhicules électriques ou hybrides. La diminution de l'utilisation des véhicules à essence témoigne de la conscience environnementale de l'humanité et de l'amour que les gens portent à leur automobile.</p>
+        <p>Un certain nombre de facteurs ont entraîné une baisse de l'utilisation des véhicules à essence. Premièrement, la propriété automobile était principalement confinée aux zones urbaines au moment de l'invention. Par conséquent, les gens vivaient plus loin des stations-service qu'aujourd'hui. Cependant, les propriétaires de voitures ont désormais plus d'options en matière de transport ; par conséquent, certains choisissent de ne pas conduire s'ils habitent trop loin d'une station-service. En dehors de cela, les habitants des zones rurales doivent souvent marcher plusieurs pâtés de maisons d'une station-service s'ils veulent faire le plein. Même si certains choisissent encore de conduire loin de chez eux, la distance moyenne que les gens parcourent aujourd'hui est bien inférieure à ce qu'elle était dans le passé, car beaucoup déménage en ville par exemple.</p>
+        <a class="YT"><img rel="img" alt="VS" src="/public/img/dispar/voitureElectrique.webp"></a>
+      <div><h2 class="sous-titre">La loi de 2035…</h2></div>
+          <p>En effet, récemment le Parlement européen a voté récemment pour l’interdiction, dès 2035, de la vente de véhicules neufs qui sont équipés de moteurs thermiques (diesel ou essence). L’Union européenne a décidé l’arrêt de la vente de ses véhicules, qui est aussi inscrit dans un cadre d’un ensemble de textes présentés par la Commission Européenne en 2021. Pour atteindre l’objectif, d’ici 2030, de réduire les émissions de CO2 de 55% par rapport aux années 90, et aussi afin de viser la « neutralité climatique » de 2050.</p>
+      <a class="YT"><img rel="img" alt="VS" src="/public/img/dispar/FinDesThermiques.webp"></a>
+    </main>
+
+
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département </a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/regret.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/regret.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>

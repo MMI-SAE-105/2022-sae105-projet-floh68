@@ -7,40 +7,68 @@
     <title>Autorama</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+    <link rel="javascript" href="/src/javascript/script.js"/>
+    <script defer src="//unpkg.com/alpinejs" ></script>
   </head>
   <body>
     
     <header>
       <nav>
-        <div class="logo"><img alt="logo" src="public/img/icons/logo_transparent.svg" /></div>
-        <ul class="menu">
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">ARTICLES</a>
-            <ul>
-            <li><a href="musique.html">Tokyo Drift</a></li>
-            <li><a href="livre.html">Auto design</a></li>
-            <li><a href="espoir.html">Evolution</a></li>
-            <li><a href="regret.html">La disparition</a></li>
-            <li><a href="film.html">Fast&Furious 5</a></li>
-            <li><a href="lieu.html">Détroit</a></li>
-            </ul>
-          </li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">AUTRES PROJETS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">GLOSSAIRE</a></li>
-        </ul>
+        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
+          <div class="menu">
+            <div class="toggle"><span></span></div>
+            <script>let menu = document.querySelector('.menu');
+              document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+              }</script>
+                <ul>
+                  <li style="--i:0;"><a href="/FR/index.html">ACCUEIL</a></li>
+                  <li style="--i:1;"><a href="#">A PROPOS</a></li>
+                  <li style="--i:2;"><a href="#">AUTRES PROJETS</a></li>
+                  <li style="--i:3;"><a href="#">CONTACT</a></li>
+                  <li style="--i:4;"><a href="#">GLOSSAIRE</a></li>
+                </ul>
+          </div>
       </nav>
     </header>
+    
+    <main>
+      <h1 class="titre">L’évolution de l’automobile</h1>
+      <div><h2 class="sous-titre">L'histoire de la voiture et son évolution au cours des 200 dernières années</h2>
+        <p>La voiture est un mode de transport populaire, et ce depuis plus de 100 ans. Qu'est-ce qui a changé au cours des 200 dernières années ?</p>
+        <p>En 1885, la première voiture est inventée par Karl Benz. Ce fut la première automobile propulsée par un moteur à combustion interne. L'invention de ce véhicule a déclenché une révolution industrielle qui allait changer le monde à jamais. Cela a également contribué à stimuler une nouvelle ère de voyage et d'exploration par la route pour des personnes qui n'en avaient jamais fait l'expérience auparavant. Avant cette invention, les gens utilisaient des calèches comme principal moyen de transport.</p>
+        <p>Les premières voitures n'étaient pas très attrayantes à regarder ou à conduire car elles étaient si lourdes et encombrantes sans système de suspension ni amortisseurs. Cela signifiait que les conducteurs devaient être très prudents lorsqu'ils conduisaient sur des terrains accidentés ou sur des routes avec des nids-de-poule, car cela pouvait entraîner des blessures graves s'ils les heurtaient trop fort ou trop vite. De plus, ces premières automobiles n'avaient pas de pare-brise, les conducteurs devaient donc porter des lunettes de protection pour se protéger.</p>
+      <div><h2 class="sous-titre">L'avenir de l'automobile et ce qu'elle nous réserve…</h2></div>
+        <p>L'avenir de l'automobile est encore incertain. Il existe de nombreuses opinions différentes sur ce à quoi ressembleront les voitures en 2025. Certains disent que la voiture du futur sera sans conducteur, tandis que d'autres pensent qu'elle sera électrique. Certaines personnes pensent que les voitures n'existeront même plus et qu'à la place, nous utiliserons tous les transports en commun ou des véhicules volants personnels.</p>
+        <a class="YT"><img rel="img" alt="VS" src="/public/img/evo/Avant-apres_automobile.webp"></a>
+      <div><h2 class="sous-titre">Impacts économiques et environnementaux des automobiles sur la société</h2></div>
+          <p>Ce n'est un secret pour personne que les voitures ont un impact énorme sur l'environnement et notre société. Alors que nous nous rapprochons de l'avenir, il est important de comprendre comment ces impacts vont changer.</p>
+          <p>Les voitures sont un élément essentiel de la vie moderne, mais elles ont également un énorme impact environnemental et économique sur la société. Les voitures consomment plus d'énergie que tout autre moyen de transport et représentent près d'un tiers de toutes les émissions mondiales de gaz à effet de serre. Les automobiles créent également des embouteillages, de la pollution de l'air, de la pollution sonore et des accidents qui coûtent des vies.</p>
+          <p>L'industrie automobile s'est efforcée de résoudre ces problèmes en développant des moteurs plus efficaces, en créant des véhicules à faibles émissions avec des moteurs électriques ou des piles à combustible à hydrogène, et en développant de nouvelles technologies telles que les voitures intelligentes qui peuvent communiquer avec d'autres voitures pour réduire les accidents.</p>
+      <div><h2 class="sous-titre">En conclusion...</h2></div>
+          <p>L'innovation est la clé du succès de toute industrie. L'industrie automobile n'y échappe pas. L'innovation est depuis longtemps un moteur constant de la croissance de cette industrie. Elle continuera de le faire également à l'avenir.</p>
+          <p>L'industrie automobile est l'une des industries les plus dynamiques aujourd'hui et le sera également à l'avenir. Elle fournit des véhicules efficaces, sûrs et fiables aux personnes du monde entier.</p>
+    </main>
+
+
     <footer>
-        <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante : fhoutmann@orange.fr</a>
-        <img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-        <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-        <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</a>
-        <img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg">
-        <a>HOUTMANN Florian A2</a>
-      </footer>
-  
-      <script src="/src/javascript/script.js"></script>
-    </body>
-  </html>
+      <a class="mailto">Merci pour votre visite, pour toute question contactez-moi à l’adresse mail suivante: fhoutmann@orange.fr</a>
+      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
+      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
+      </div>
+      <a class=projet>Projet réalisé dans le cadre d’un exercice pédagogique au département </a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
+      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
+      <div class="nom">
+        HOUTMANN<br>
+        Florian<br>
+        A2  
+      </div>
+      <div class=changement_langue>
+        <a href="/FR/espoir.html" class="language">FR</a>
+            <div class="white-line"></div>
+            <a href="/EN/espoir.html" class="language">EN</a>
+      </div>
+    </footer>
+  </body>
+</html>
