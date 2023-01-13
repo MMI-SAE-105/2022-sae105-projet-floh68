@@ -30,6 +30,7 @@ Soyez attentifs à l'ordre d'import :
 @import "layout/home_page.css";
 @import "layout/timeline.css";
 @import "layout/formulaire.css";
+@import "layout/autresProjets.css";
 
 /* Composants */
 @import "components/menu.css";

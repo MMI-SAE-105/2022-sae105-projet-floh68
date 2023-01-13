@@ -42,3 +42,13 @@ input[type=text], textarea, input[type=email] {
     color: var(--pink);
     width: 100%;
   }
+
+.apropos{
+  margin-bottom: 100%;
+}
+
+.apropos button{
+  float: right;
+  background-color: transparent;
+  margin-right: 5%;
+}

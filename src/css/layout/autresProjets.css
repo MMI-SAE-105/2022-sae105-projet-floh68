@@ -1,0 +1,24 @@
+.projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projet__list{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projet__list p{
+    text-align: center;
+    color: black;
+}
+
+.projet__list a{
+    text-decoration: none;
+    color: black;
+}
+
+
+  
